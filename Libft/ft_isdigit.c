@@ -3,31 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: palopez- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 16:54:30 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/12 17:00:19 by palopez-         ###   ########.fr       */
+/*   Updated: 2023/09/21 12:29:39 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+#include "libft.h"
 
-int	ft_isdigit(char *str)
+int	ft_isdigit(int c)
 {
-	int	i;
-
-	i = 0;
-	if (str[i] == '\0')
+	if (c >= '0' && c <= '9')
 		return (1);
-	while (str[i] != '\0')
-	{
-		if (!(str[i] >= '0' && str [i] <= '9'))
-			return (0);
-		i++;
-	}
-	return (1);
+	return (0);
 }
+
 /*int main ()
 {
 	char str[100] = "123855";
@@ -37,4 +30,3 @@ int	ft_isdigit(char *str)
 	return (0);
 }
 */
-

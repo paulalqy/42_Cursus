@@ -6,15 +6,14 @@
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:10:19 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/15 16:15:21 by palopez-         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:24:26 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-
-int ft_isalnum (int c)
+int	ft_isalnum(int c)
 {
 	if (c >= 48 && c <= 57)
 		return (1);
@@ -23,7 +22,7 @@ int ft_isalnum (int c)
 	return (0);
 }
 
-int main ()
+/*int main ()
 {
 	int valor = 'A';
 	if (ft_isalnum (valor))
@@ -34,3 +33,4 @@ int main ()
 	
 	return (0);
 }
+*/

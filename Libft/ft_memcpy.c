@@ -1,31 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 16:26:09 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/15 17:26:27 by palopez-         ###   ########.fr       */
+/*   Created: 2023/09/18 08:43:38 by palopez-          #+#    #+#             */
+/*   Updated: 2023/09/18 18:27:06 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h>
 
-int ft_isprint (int c)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	if (c >= 32 && c <= 127)
-		return (1);
-	return (0);
-}
+	size_t	i;
 
-int main()
-{
-	int valor = 32;
-	if (ft_isprint (valor))
-			printf ("El caracter %c es printable.\n", valor);
-	else 		
-		printf ("El caracter %c no es printable. \n", valor);
-	return (1);
+	if (!dst && !src)
+		return (0);
+	i = 0;
+	while (i < n)
+	{
+		((char *)dst)[i] = ((const char *)src)[i];
+		i++;
+	}
+	return (dst);
 }
+/*int main ()
+{
+	char dst[20];
+    const char src[] = "Hola, mundo!";
+    size_t n = 5; 
+    ft_memcpy(dst, src, n);
+    printf("destino: %s\n", dst);
+
+    return 0;
+}
+*/

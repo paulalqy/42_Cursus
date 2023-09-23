@@ -1,36 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 17:10:19 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/15 16:15:21 by palopez-         ###   ########.fr       */
+/*   Created: 2023/09/16 18:14:41 by palopez-          #+#    #+#             */
+/*   Updated: 2023/09/21 13:59:06 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h>
 
-
-int ft_isalnum (int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		((unsigned char *)s)[i] = 0;
+		i++;
+	}
 }
 
-int main ()
+/*int main()
 {
-	int valor = 'A';
-	if (ft_isalnum (valor))
-		printf("El carácter %c es alfanumérico.\n", valor);
-		
-	else
-		printf("%c no es alfanumerico. \n", valor);
+	char cadena[4] = {'1', '2', '3', '4'};
+	size_t n = 3;
+	size_t i = 0;
 	
+	ft_bzero(cadena, n);
+	while (i < n + 1)
+	{
+		write(1, &cadena[i], 1);
+		i++;
+	}
+	write(1, "\n", 1);
+	
+	//bzero(cadena, n);
+	//printf ("%c\n", cadena[3]);
 	return (0);
 }
+*/

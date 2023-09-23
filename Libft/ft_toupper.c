@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 17:31:20 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/15 17:55:51 by palopez-         ###   ########.fr       */
+/*   Created: 2023/09/19 18:43:24 by palopez-          #+#    #+#             */
+/*   Updated: 2023/09/21 13:53:54 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include <unistd.h>
 #include <stdio.h>
 
-size_t	ft_strlen(const char *s)
+int	ft_toupper(int c)
 {
-	size_t	len;
+	if (c >= 97 && c <= 122)
+		c -= 32;
+	return (c);
+}
 
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
-int main ()
-{
-	printf("len: %zu\n", ft_strlen("caca"));
-	return (0);
-}
+// int	main()
+// {
+// 	printf("%c\n", 97);
+// 	printf("%c\n", ft_toupper(97));
+// 	return (0);
+// }
