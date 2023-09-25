@@ -6,7 +6,7 @@
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:35:29 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/21 13:56:06 by palopez-         ###   ########.fr       */
+/*   Updated: 2023/09/25 12:53:40 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,6 @@
 #include <stdio.h>
 #include <string.h>
 #include "libft.h"
-
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
