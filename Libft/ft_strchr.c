@@ -6,7 +6,7 @@
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 20:44:40 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/21 14:07:28 by palopez-         ###   ########.fr       */
+/*   Updated: 2023/09/26 16:36:07 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*ft_strchr(const char *s, int c)
 
 //     if (resultado != NULL) 
 // 	{
-//         printf("El caracter '%c' se encuentra en la cadena en la posición %ld.\n", caracter, resultado - cadena);
+//         printf("'%c' está en cadena en pos %ld.\n"), caracter, resultado - cadena);
 //     } 
 // 	else 
 // 	{

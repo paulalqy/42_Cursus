@@ -6,7 +6,7 @@
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 17:47:22 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/25 17:22:46 by palopez-         ###   ########.fr       */
+/*   Updated: 2023/10/02 16:28:47 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (0);
 }
 
-int main ()
+/*int	main ()
 {
 	const char *haystack = "aaabcabcd";
 	const char *needle = "abcd";
@@ -44,4 +44,4 @@ int main ()
 	printf("Haystack = %p\n", haystack + 5);
 	printf("%p\n", ft_strnstr(haystack, needle, len));
 	return (0);
-}
+}*/

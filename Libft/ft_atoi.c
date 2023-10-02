@@ -6,7 +6,7 @@
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 18:27:42 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/25 20:15:56 by palopez-         ###   ########.fr       */
+/*   Updated: 2023/09/26 16:19:40 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int i;
-	int signo;
-	int resultado;
+	int	i;
+	int	signo;
+	int	resultado;
 
 	resultado = 0;
 	signo = 1;
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (str[i + 1]  >= '0' && str[i + 1] <= '9')
+		if (str[i + 1] >= '0' && str[i + 1] <= '9')
 			resultado = (resultado + (str[i] - 48)) * 10;
 		else
 			resultado = resultado + (str[i] - 48);
@@ -44,5 +44,4 @@ int	ft_atoi(const char *str)
 {
 	printf("org = %d\n", atoi("+214"));
 	printf("mia = %d\n", ft_atoi("+214"));
-}*/ 
-
+}*/
