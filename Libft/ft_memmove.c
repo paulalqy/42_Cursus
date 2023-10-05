@@ -6,7 +6,7 @@
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 10:31:09 by palopez-          #+#    #+#             */
-/*   Updated: 2023/09/21 13:07:10 by palopez-         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:04:25 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-// int main ()
-// {
-// 	char dst [] = "mi carro se lo llevaron";
-// 	char src [] = "hola";
-// 	printf("%s \n", ft_memmove(dst, src, 3));
-// 	return (0);
-// }
+/*int main ()
+{
+	char dst [] = "mi carro se lo llevaron";
+	char src [] = "hola";
+ 	printf("%s \n", ft_memmove(dst, src, 3));
+ 	return (0);
+}*/
