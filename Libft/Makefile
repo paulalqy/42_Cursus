@@ -25,7 +25,8 @@ SRCS		=  ft_bzero.c \
 			  ft_substr.c \
 			  ft_strjoin.c \
 			  ft_strtrim.c \
-			  ft_itoa.c
+			  ft_itoa.c \
+			  ft_split.c
 
 OBJS		= ${SRCS:.c=.o}
 NAME		= libft.a
