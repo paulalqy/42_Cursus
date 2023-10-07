@@ -6,7 +6,7 @@
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 12:49:33 by palopez-          #+#    #+#             */
-/*   Updated: 2023/10/02 17:29:46 by palopez-         ###   ########.fr       */
+/*   Updated: 2023/10/07 18:05:11 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strdup(const char *s1)
 {
 	size_t	lens1;
-	char *s2;
-	int	i;
+	char	*s2;
+	int		i;
 
 	lens1 = ft_strlen(s1);
 	s2 = (char *) malloc ((lens1 +1) * sizeof(char));

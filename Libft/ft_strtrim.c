@@ -6,7 +6,7 @@
 /*   By: palopez- <palopez-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:35:37 by palopez-          #+#    #+#             */
-/*   Updated: 2023/10/05 17:04:10 by palopez-         ###   ########.fr       */
+/*   Updated: 2023/10/07 18:01:36 by palopez-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ static int	checkset(char c, char const *set)
 	int	i;
 
 	i = 0;
-
 	while (set [i] != '\0')
 	{
 		if (set[i] == c)
