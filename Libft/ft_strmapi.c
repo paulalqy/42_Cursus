@@ -12,27 +12,38 @@
 
 #include "libft.h"
 
-static	char	my_function(unsigned int i, char c)
-{
-	char	c;
-
-	c = c + 1;
-	return (c);
-}
+// char	my_function(unsigned int i, char c)
+// {
+// 	(void) i;
+// 	c = c + 1;
+// 	return (c);
+// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t			len;
 	unsigned int	i;
-	char *cadena;
-	
-	len = ft_strlen(s);
-	cadena = malloc (len * sizeof(char));
+	char			*m;
+
 	i = 0;
+	len = ft_strlen(s);
+	m = (char *) malloc ((len + 1) * sizeof(char));
+	if (m == NULL)
+		return (NULL);
 	while (s[i] != '\0')
 	{
-		cadena[i]  = (*f)(i, s[i]);
+		m[i] = (*f)(i, s[i]);
 		i ++;
 	}
-	return (cadena);
+	m[len] = '\0';
+	return (m);
 }
+// int	main()
+// {
+// 	char	s[] = "hola";
+// 	char	*resultado;
+
+// 	resultado = ft_strmapi(s, my_function);
+// 	printf("%s \n", resultado);
+// 	return (0);
+// }
