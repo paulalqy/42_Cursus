@@ -10,40 +10,45 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/* #include "libft.h" */
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-// char	my_function(unsigned int i, char c)
-// {
-// 	(void) i;
-// 	c = c + 1;
-// 	return (c);
-// }
+static char my_function (unsigned int i, char c)
+{}
+size_t	ft_strlen(const char *s)
+{
+	size_t	len;
+
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
+}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t			len;
 	unsigned int	i;
-	char			*m;
+	char			*cadena;
 
-	i = 0;
 	len = ft_strlen(s);
-	m = (char *) malloc ((len + 1) * sizeof(char));
-	if (m == NULL)
-		return (NULL);
+	cadena = malloc (len * sizeof(char));
+	i = 0;
 	while (s[i] != '\0')
 	{
-		m[i] = (*f)(i, s[i]);
-		i ++;
+		cadena[i]  = (*f)(i, s[i]);
+		i++;
 	}
-	m[len] = '\0';
-	return (m);
+	return (cadena);
 }
-// int	main()
-// {
-// 	char	s[] = "hola";
-// 	char	*resultado;
+int	main ()
+{
+	char s[] = "hola";
+	char *resultado;
 
-// 	resultado = ft_strmapi(s, my_function);
-// 	printf("%s \n", resultado);
-// 	return (0);
-// }
+	resultado = ft_strmapi(s, my_function);
+	printf("%s, \n", resultado);
+	return (0);
+}
