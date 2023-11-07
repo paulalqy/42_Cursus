@@ -44,6 +44,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char dst [] = "mi carro se lo llevaron";
 	char src [] = "hola";
- 	printf("%s \n", ft_memmove(dst, src, 3));
+ 	ft_memmove(dst, src, 3);
+ 	printf("%s \n", dst);
  	return (0);
 }*/
